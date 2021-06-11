@@ -50,7 +50,7 @@
 
         public function changeStatus()
         {
-            if(!$this->model->changeStatus())
+            if(!$this->model->chStatus())
             {
                 return false;
             }

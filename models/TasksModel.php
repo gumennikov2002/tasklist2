@@ -47,7 +47,7 @@
             header('Location: /tasks');
         }
 
-        public function changeStatus()
+        public function chStatus()
         {
             $id = $_GET['task_id'];
             $uid = $_SESSION['user']['id'];

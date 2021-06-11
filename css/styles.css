@@ -68,3 +68,19 @@ footer .container {
     float: right;
     margin-left: 20px;
 }
+
+.main-banner {
+    background-color: #2d3436;
+    color: #fff;
+    padding: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.main-banner p {
+    font-size: 20px;
+}
+
+.main-banner a {
+    color: #fff;
+}

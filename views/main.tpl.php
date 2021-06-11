@@ -13,25 +13,16 @@
                         <b>TASK LIST</b>
                     </div>
                     <div class="reg-links mt-1">
-                        <b>Авторизация</b>
+                        <b>Главная страница</b>
                     </div>
                 </div>
             </div>
         </header>
         <center>
-            <div class='container mt-120 custom-input'>
-            <h2>Авторизация</h2>
-            <form method='POST'>
-                <input type='text' placeholder='Логин' name='login' class='form-control mt-3'>
-                <input type='password' placeholder='Пароль' name='password' class='form-control mt-1'>
-                <input type='submit' value='Войти' class='btn btn-success mt-2'>
-                <? if(!empty($pageData['error'])) : ?>
-                    <div class="alert alert-danger mt-2 custom-alert">
-                        <? echo $pageData['error']; ?>
-                    </div>
-                <? endif; ?>
-            </form>
-            </div>
+           <div class="container main-banner">
+               <h1>:(</h1>
+                <p>Для продолжения вам нужно <a href="/Auth/">авторизоваться</a>.</p>
+           </div>
         </center>
     </body>
 </html>
