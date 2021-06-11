@@ -15,6 +15,12 @@ class IndexController extends Controller
 
 	public function index()
 	{
+
+		if(isset($_SESSION['user']))
+		{
+			header('Location: /tasks');
+		}
+
 		$this->pageData['title'] = "TASKLIST | Авторизация";
 
 		if (!empty($_POST))

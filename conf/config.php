@@ -1,4 +1,5 @@
 <?
+    session_start();
     define("ROOT", $_SERVER['DOCUMENT_ROOT']);
     // define("ROOT", "C:/OpenServer/domains/task2");
     define("CONTROLLER_PATH", ROOT. "/controllers/");

@@ -16,10 +16,15 @@
             $stmt->execute();
 
             $res = $stmt->fetch(PDO::FETCH_ASSOC);
+            $id = $res[id];
 
             if (!empty($res))
             {
                 //проверки
+                $_SESSION['user'] = [
+                    'id' => $id,
+                    'login' => $login
+                ];
                 header('Location: /tasks');
             }
             else

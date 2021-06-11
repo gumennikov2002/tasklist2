@@ -63,3 +63,8 @@ footer .container {
 .mt-120 {
     margin-top: 120px;
 }
+
+.fr {
+    float: right;
+    margin-left: 20px;
+}
