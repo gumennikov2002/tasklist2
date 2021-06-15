@@ -1,10 +1,7 @@
-<html>
-    <head>
-        <title><? echo $pageData['title']; ?></title>
-        <meta charset="UTF-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/styles.css">
-    </head>
+<?
+    include('header.tpl.php');
+    $ulogin = (explode(":", $_SESSION['user']['login']))[1];
+?>
     <body>
         <header>
             <div class="container-fluid bg-header">
@@ -13,7 +10,7 @@
                         <b>TASK LIST</b>
                     </div>
                     <div class="reg-links mt-1">
-                        <b>Добро пожаловать, <?=$_SESSION['user']['login']."!";?></b>
+                        <b>Добро пожаловать, <?=$ulogin."!";?></b>
                         <a href="/tasks/logout">(Выйти)</a>
                     </div>
                 </div>
