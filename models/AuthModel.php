@@ -24,9 +24,10 @@
 
                 if(!empty($res))
                 {
+                    $salt = "!34Hdff^7:";
                     $_SESSION['user'] = [
-                        'id' => $id,
-                        'login' => $login
+                        'id' => $salt.$id,
+                        'login' => $salt.$login
                     ];
                     header('Location: /tasks');
                 }
